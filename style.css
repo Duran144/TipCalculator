@@ -1,0 +1,549 @@
+@font-face {
+    font-family: "SpaceMono";
+    src: url(./Assets/Fonts/SpaceMono-Regular.ttf);
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo{
+    display: flex;
+    margin: 3rem auto;
+}
+
+.parent-box{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.box-1{
+    border-radius: 5%;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+.bill-text{
+    margin: 0 0 0 1rem;
+    font-family: "SpaceMono";
+    width: 50%;
+}
+
+.bill-error{
+    margin: -1.4rem 0 -1.5rem 10rem;
+    color: red;
+    font-family: "SpaceMono";
+    width: 50%;
+}
+
+.bill-input{
+    margin: 1.5rem 0 0 1rem;
+    width: 84%;
+    border: none;
+    border-radius: 5%;
+    color: hsl(183, 100%, 15%);
+    font-family: "SpaceMono";
+    font-weight: 700;
+    font-size: 18px;
+    background-color: hsl(185, 41%, 84%);
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding: 1rem;
+    text-align: right;
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.bill-input:focus{
+    cursor: pointer;
+}
+
+.bill-input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.tipbtn-header{
+    font-family: "SpaceMono";
+    margin: 2rem 0 0 1rem;
+}
+
+.tip-btn{
+    width: 8.5rem;
+    padding: 1rem;
+    margin: 1rem 0 0 1rem;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5%;
+    font-family: "SpaceMono";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tip-btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.custom-btn{
+    width: 8.5rem;
+    padding: 1rem;
+    margin: 1rem 0 0 1rem;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    border: none;
+    border-radius: 5%;
+    font-family: "SpaceMono";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-input{
+    width: 6.4rem;
+    padding: 1rem;
+    margin: 1rem 0 0 1rem;
+    text-align: right;
+    font-family: "SpaceMono";
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5%;
+    outline: none;
+}
+
+.nop-text{
+    margin: 3rem 0 0 1rem;
+    font-family: "SpaceMono";
+    width: 50%;
+}
+
+.nop-error{
+    width: 40%;
+    margin: -1.5rem 0 -1.5rem 12rem;
+    color: red;
+    font-family: "SpaceMono";
+}
+
+.nop-input{
+    margin: 1.5rem 0 0 1rem;
+    outline-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5%;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    padding: 1rem;
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    width: 84%;
+    font-family: "SpaceMono";
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+}
+
+.nop-input:focus{
+    cursor: pointer;
+}
+
+.nop-input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    margin-left: auto;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 5%;
+}
+
+.box-2 > h4::after{
+    content: '/ person';
+    color: hsl(186, 14%, 43%);
+    font-family: "SpaceMono";
+    font-weight: 700;
+}
+
+.tip-text{
+    color: hsl(0, 0%, 100%);
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 14px;
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.total-text{
+    color: hsl(0, 0%, 100%);
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 16px;
+    width: 50%;
+}
+
+.amountAreas{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -13rem;
+    margin-bottom: 5rem;
+}
+
+.tipArea{
+    background-color: transparent;
+    color: hsl(172, 67%, 45%);
+    font-family: "SpaceMono";
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    align-self: center;
+    margin-top: -.1rem;
+    margin-left: 8rem;
+}
+
+.totalArea{
+    color: hsl(172, 67%, 45%);
+    background-color:transparent;
+    font-family: "SpaceMono";
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+    align-self: center;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+
+.reset-btn{
+    margin: 2.5rem auto 0 auto;
+    width: 90%;
+    border: none;
+    border-radius: 5%;
+    padding: 1rem;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.reset-btn:hover{
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 79.7em) {
+.tip-btn{
+        width: 8rem;
+    }
+
+    .custom-btn{
+        width: 8rem;
+    }
+
+    .custom-input{
+        width: 5.7rem;
+    }
+}
+
+@media screen and (max-width: 76em) {
+.tip-btn{
+        width: 7rem;
+    }
+
+    .custom-btn{
+        width: 7rem;
+    }
+
+    .custom-input{
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 68.5em) {
+.tip-btn{
+        width: 6rem;
+    }
+
+    .custom-btn{
+        width: 6rem;
+    }
+
+    .custom-input{
+        width: 3.8rem;
+    }
+}
+
+@media screen and (max-width: 62em) {
+    .tip-btn{
+        width: 5.5rem;
+    }
+
+    .custom-btn{
+        width: 5.5rem;
+        padding: 0;
+    }
+
+    .custom-input{
+        width: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 59em) {
+
+    .parent-box{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .box-1{
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .box-2{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .bill-input{
+        width: 80%;
+    }
+
+    .tip-btn{
+        width: 9rem;
+    }
+
+    .custom-btn{
+        width: 9rem;
+    }
+
+    .custom-input{
+        width: 6.7rem;
+    }
+
+    .nop-input{
+        width: 80%;
+    }
+
+    .reset-btn{
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 50.9em) {
+
+    .tip-btn{
+        width: 8rem;
+    }
+
+    .custom-btn{
+        width: 8rem;
+    }
+
+    .custom-input{
+        width: 5.8rem;
+    }
+}
+
+@media screen and (max-width: 46em) {
+    .tip-btn{
+        width: 7rem;
+    }
+
+    .custom-btn{
+        width: 7rem;
+    }
+
+    .custom-input{
+        width: 4.8rem;
+    }
+}
+
+@media screen and (max-width: 40.9em) {
+
+    .tip-btn{
+        width: 6rem;
+    }
+
+    .custom-btn{
+        width: 6rem;
+    }
+
+    .custom-input{
+        width: 3.9rem;
+    }
+
+    .reset-btn{
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .tip-btn{
+        width: 9rem;
+    }
+
+    .custom-btn{
+        width: 9rem;
+    }
+
+    .custom-input{
+        width: 6.8rem;
+    }
+}
+
+@media screen and (max-width: 34.3em) {
+    .tip-btn{
+        width: 8rem;
+    }
+
+    .custom-btn{
+        width: 8rem;
+    }
+
+    .nop-text{
+        width: 100%;
+    }
+
+    .nop-error{
+        width: 50%;
+        margin-left: 11rem;
+    }
+
+    .custom-input{
+        width: 5.8rem
+    }
+}
+
+@media screen and (max-width: 30.9em) {
+    .tip-btn{
+        width: 7rem;
+    }
+
+    .custom-btn{
+        width:7rem;
+    }
+
+    .custom-input{
+        width: 4.9rem;
+    }
+}
+
+
+@media screen and (max-width: 28em) {
+    .parent-box{
+        width: 100%;
+        border-radius: 5%;
+        margin: 0 auto;
+    }
+
+    .box-1{
+        width: 90%;
+        border-radius: 5%;
+    }
+
+    .bill-input{
+        width: 82%;
+    }
+
+    .box-2{
+        width: 75%;
+    }
+
+    .tip-btn{
+        width: 10rem;
+    }
+
+    .custom-btn{
+        width: 10rem;
+    }
+
+    .custom-input{
+        width: 7.9rem;
+    }
+
+    .nop-input{
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 25.6em) {
+
+    .tip-btn{
+        width: 8rem;
+    }
+
+    .custom-btn{
+        width: 8rem;
+    }
+
+    .custom-input{
+        width: 5.8rem;
+    }
+}
+
+@media screen and (max-width: 22em) {
+
+    .bill-error{
+        margin: 0 0 -1.5rem 15.5px;
+    }
+
+    .nop-error{
+        margin: 0 0 -1.5em 15.5px;
+    }
+}
+
+@media screen and (max-width: 20.9em) {
+    .box-1{
+        padding-left: 0;
+    }
+
+    .tip-btn{
+        width: 7.5rem;
+    }
+
+    .custom-btn{
+        width: 7.5rem;
+    }
+
+    .custom-input{
+        width: 5.1rem;
+    }
+
+    .box-2{
+        width: 80%;
+        margin-left: auto;
+    }
+}

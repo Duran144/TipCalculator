@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo" class="logo">
+
+  <div class="parent-box">
+    <div class="box-1">
+      <h4 class="bill-text">Bill</h4>
+      <p class="bill-error"></p>
+      <input type="text" class="bill-input">
+      <h4 class="tipbtn-header">Select tip %</h4>
+      
+      <div class="btn-container">
+        <button class="tip-btn" onclick="Tip(5)">5%</button>
+        <button class="tip-btn" onclick="Tip(10)">10%</button>
+        <button class="tip-btn" onclick="Tip(15)">15%</button>
+        <br>
+        <button class="tip-btn" onclick="Tip(25)">25%</button>
+        <button class="tip-btn" onclick="Tip(50)">50%</button>
+        <button class="custom-btn" id="myInput" onclick="customTip()">Custom</button>
+      </div>
+      
+      <h4 class="nop-text">Number of people</h4>
+      <p class="nop-error"></p>
+      <input type="text" class="nop-input">
+    </div>
+    
+    <div class="box-2">
+      <h4 class="tip-text">Tip Amount <br> </h4>
+      <h4 class="total-text">Total <br> </h4>
+      <div class="amountAreas">
+        <p class="tipArea">&#36;0.00</p>
+        <p class="totalArea">&#36;0.00</p>
+      </div>
+      <button class="reset-btn" onclick="resetFields()">Reset</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
